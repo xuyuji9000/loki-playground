@@ -1,7 +1,7 @@
 - Run loki
 
 ``` bash 
-docker run -p 3000:3000 \
+docker run -p 3100:3100 \
 -d \
 -v $(pwd)/local-config.yaml:/local-config.yaml \
 grafana/loki \
