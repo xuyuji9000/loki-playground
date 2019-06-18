@@ -8,3 +8,10 @@ services:
     command: -config.file=/local-config.yaml
     volumes:
       - ${PWD}/loki/local-config.yaml:/local-config.yaml
+  promtail:
+    image: grafana/promtail
+    restart: always
+    command: -config.file=/docker-config.yaml
+    volumes:
+      - ${PWD}/promtail/docker-config.yaml:/docker-config.yaml
+      - ${PWD}/promtail/log:/var/log
