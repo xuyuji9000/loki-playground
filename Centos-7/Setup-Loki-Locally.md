@@ -6,7 +6,9 @@
 
 - Steps
 
-0. Create `/srv/loki` working directory
+0. Prepare working directory
+
+    > `/srv/loki` used for Loki
 
 1. Get Loki from [release page](https://github.com/grafana/loki/releases/)
 
